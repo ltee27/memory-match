@@ -1,6 +1,6 @@
 var firstCardClicked = null;
 var secondCardClicked = null;
-var matches = null;
+var matches = 0;
 var max_matches = 9;
 var attempts = 0;
 var games_played = 0;
@@ -25,7 +25,6 @@ function handleCardClick(event) {
 
         if (firstImage === secondImage) {
             matches++;
-            max_matches++;
             setTimeout(matchAlert, 20);
             firstCardClicked = null;
             secondCardClicked = null;
