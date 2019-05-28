@@ -84,33 +84,39 @@ aside {
     display: none;
 }
 
-.modal {
+#myModal {
     display: none;
     position: fixed;
     z-index: 1;
-    top: 25%;
     left: 25%;
-    right: 35%;
-    width: 25%;
-    height: 25%;
+    right: 25%;
+    width: 30%;
+    height: 40%;
     background-color: dodgerblue;
     border-radius: 10px;
     text-align: center;
+    top: -2%;
 }
 
-.modal-content {
+.modal {
     background-color: dodgerblue;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
+    color: black;
+    left: 35%;
+    top: 25%;
+    display: none;
+    font-size: 35px;
 }
 
 .close {
-    color: black;
+    color: darkgray;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    top: 6%;
+    left: 95%;
 }
 
 .close:hover,
@@ -120,23 +126,14 @@ aside {
     cursor: pointer;
 }
 
-.modal {
-    color: black;
-    left: 35%;
-    top: 25%;
-    display: none;
-    padding: 50px;
-    margin: auto;
-    font-size: 35px;
-}
-
 .button {
     background-color: white;
     display: inline-block;
-    position: relative;
+    position: absolute;
     height: 45px;
     width: 175px;
     font-size: 25px;
+    right: 145px;
 }
 
 img {
