@@ -134,6 +134,7 @@ aside {
     width: 175px;
     font-size: 25px;
     right: 145px;
+    text-align: center;
 }
 
 img {
@@ -178,23 +179,58 @@ h1 {
     border-radius: 10%;
     margin-top: 2%;
     margin-left: 5%;
+    margin-bottom: 2%;
     opacity: .5;
     position: relative;
 }
 
-.value {
-    width: 112%;
-    height: 180%;
+.games-value {
+    width: 73%;
+    height: 5%;
     border: 1px solid black;
     box-sizing: content-box;
-    padding: 4%;
+    padding: 7%;
     font-size: 20px;
     background-color: dodgerblue;
     text-align: center;
     display: inline-block;
     border-radius: 10%;
-    margin-top: 15%;
-    margin-left: -10%;
-    opacity: 1.7;
-    position: static;
+    margin-top: 2%;
+    margin-left: 5%;
+    opacity: .5;
+    position: relative;
+}
+
+.attempts-value {
+    width: 73%;
+    height: 5%;
+    border: 1px solid black;
+    box-sizing: content-box;
+    padding: 7%;
+    font-size: 20px;
+    background-color: dodgerblue;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
+    opacity: .5;
+    position: relative;
+}
+
+.accuracy-value {
+    width: 73%;
+    height: 5%;
+    border: 1px solid black;
+    box-sizing: content-box;
+    padding: 7%;
+    font-size: 20px;
+    background-color: dodgerblue;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
+    opacity: .5;
+    position: relative;
 }

@@ -25,7 +25,6 @@ function handleCardClick(event) {
 
         var firstImage = $(firstCardClicked).find('.card-front img').attr('src');
         var secondImage = $(secondCardClicked).find('.card-front img').attr('src');
-        debugger;
         if (firstImage === secondImage) {
             matches++;
             firstCardClicked = null;
@@ -44,23 +43,23 @@ function handleCardClick(event) {
     }
 }
 
+function resetGame() {
+    resetCards();
+    closeModal();
+    resetStats();
+}
+
 function resetStats() {
+    displayStats();
     matches = 0;
     attempts = 0;
     accuracy = 0;
-    displayStats();
-}
-
-function resetGame() {
-    resetStats();
-    resetCards();
-    closeModal();
 }
 
 function displayStats() {
-    $('.attempts .value').text(this.attempts);
-    $('.accuracy .value').text(this.Math.round(accuracy*100) + '%');
-    $('.games_played .value').text(this.games_played);
+    $('.games_played .value').text(games_played);
+    $('.attempts .value').text(attempts);
+    $('.accuracy .value').text(Math.round(accuracy*100) + '%');
 }
 
 function calculateAccuracy() {
