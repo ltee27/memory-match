@@ -20,42 +20,35 @@ span {
 }
 
 main {
-    height: 77%;
-    width: 70%;
-    display: inline-block;
-    position: absolute;
-    left: 20%;
-    top: 15%;
+    height: 100%;
+    width: 100%;
 }
 
 aside {
     height: 64%;
-    width: 17%;
+    width: 20%;
     display: inline-block;
     position: absolute;
-    top: 26%;
-    right: 80%;
+    top: 25%;
+    right: 78%;
 }
 
 .cardContainer {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    top: 50px;
-    left: 3%;
-    position: absolute;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 23%;
+    left: 23%;
+    position: relative;
 }
 
 .card {
-    height: 150px;
-    width: 130px;
-    border: 1px solid black;
+    height: 40%;
+    width: 13%;
     position: relative;
-    display: inline-block;
-    top: 30px;
-    margin-left: 15px;
-    margin-right: 3px;
-    margin-top: 5px;
+    margin-left: 2%;
+    margin-top: 1%;
 }
 
 .card-back {
@@ -67,6 +60,7 @@ aside {
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 20px;
 }
 
 .card-front {
@@ -78,6 +72,7 @@ aside {
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 20px;
 }
 
 .hidden {
@@ -92,18 +87,20 @@ aside {
     right: 25%;
     width: 30%;
     height: 40%;
-    background-color: dodgerblue;
+    background-color: black;
+    opacity: 0.8;
     border-radius: 10px;
     text-align: center;
     top: -2%;
 }
 
 .modal {
-    background-color: dodgerblue;
+    background-color: black;
+    color: white;
     margin: 15% auto;
     padding: 20px;
     width: 80%;
-    color: black;
+    color: white;
     left: 35%;
     top: 25%;
     display: none;
@@ -127,14 +124,16 @@ aside {
 }
 
 .button {
-    background-color: white;
+    background-color: black;
+    color: white;
     display: inline-block;
     position: absolute;
-    height: 45px;
-    width: 175px;
+    height: 15%;
+    width: 35%;
     font-size: 25px;
-    right: 145px;
+    right: 32%;
     text-align: center;
+    border-radius: 10px;
 }
 
 img {
@@ -142,6 +141,7 @@ img {
     width: 100%;
     display: inline-block;
     position: absolute;
+    border-radius: 20px;
 }
 
 h1 {
@@ -151,84 +151,46 @@ h1 {
 }
 
 .statsBox {
-    width: 75%;
-    height: 5%;
+    width: 80%;
+    height: 10%;
     border: 1px solid black;
     box-sizing: content-box;
-    padding: 6%;
     font-size: 27px;
     font-weight: bold;
-    background-color: white;
+    background-color: dodgerblue;
     text-align: center;
-    display: inline-block;
-    border-radius: 10%;
+    border-radius: 10px;
     opacity: .5;
     margin-left: 5%;
 }
 
 .games_played, .attempts, .accuracy {
-    width: 73%;
-    height: 5%;
+    width: 80%;
+    height: 8%;
+    padding-top: 5%;
     border: 1px solid black;
     box-sizing: content-box;
-    padding: 7%;
     font-size: 20px;
     background-color: dodgerblue;
     text-align: center;
-    display: inline-block;
-    border-radius: 10%;
+    border-radius: 10px;
     margin-top: 2%;
-    margin-left: 5%;
     margin-bottom: 2%;
     opacity: .5;
     position: relative;
+    left: 5%
 }
 
-.games-value {
-    width: 73%;
-    height: 5%;
+.games-value, attempts-value, .accuracy-value {
+    width: 80%;
+    height: 10%;
     border: 1px solid black;
     box-sizing: content-box;
-    padding: 7%;
     font-size: 20px;
     background-color: dodgerblue;
     text-align: center;
     display: inline-block;
-    border-radius: 10%;
-    margin-top: 2%;
-    margin-left: 5%;
-    opacity: .5;
-    position: relative;
-}
-
-.attempts-value {
-    width: 73%;
-    height: 5%;
-    border: 1px solid black;
-    box-sizing: content-box;
-    padding: 7%;
-    font-size: 20px;
-    background-color: dodgerblue;
-    text-align: center;
-    display: inline-block;
-    border-radius: 10%;
-    margin-top: 2%;
-    margin-left: 5%;
-    opacity: .5;
-    position: relative;
-}
-
-.accuracy-value {
-    width: 73%;
-    height: 5%;
-    border: 1px solid black;
-    box-sizing: content-box;
-    padding: 7%;
-    font-size: 20px;
-    background-color: dodgerblue;
-    text-align: center;
-    display: inline-block;
-    border-radius: 10%;
+    border-radius: 10px;
     margin-top: 2%;
     margin-left: 5%;
     opacity: .5;
