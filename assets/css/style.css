@@ -1,7 +1,6 @@
 body {
-    border: 1px solid black;
-    height: 100vh;
-    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -10,6 +9,13 @@ header {
     position: absolute;
     text-align: center;
     bottom: 85%;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
 }
 
 span {
@@ -34,46 +40,39 @@ aside {
 }
 
 .cardContainer {
-    height: 50%;
-    width: 70%;
+    height: 70%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     top: 23%;
     left: 23%;
-    position: relative;
+    position: absolute;
 }
 
 .card {
-    height: 40%;
-    width: 13%;
+    height: 38%;
+    width: 15%;
     position: relative;
-    margin-left: 2%;
-    margin-top: 1%;
+    margin-left: 1%;
+    margin-top: -6%;
+    left: 5%;
+    top: 10%;
 }
 
-.card-back {
+.card-back, .card-front {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
-    left: 0;
     top: 0;
-    border-radius: 20px;
 }
 
-.card-front {
+/* img {
+    height: 80%;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: inline-block;
+    position: relative;
     border-radius: 20px;
-}
+} */
 
 .hidden {
     display: none;
@@ -136,63 +135,26 @@ aside {
     border-radius: 10px;
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    position: absolute;
-    border-radius: 20px;
-}
-
-h1 {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.statsBox {
-    width: 80%;
+.statsBox,
+.games_played,
+.attempts,
+.accuracy,
+.games-value,
+.attempts-value,
+.accuracy-value {
     height: 10%;
-    border: 1px solid black;
-    box-sizing: content-box;
-    font-size: 27px;
-    font-weight: bold;
-    background-color: dodgerblue;
-    text-align: center;
-    border-radius: 10px;
-    opacity: .5;
-    margin-left: 5%;
-}
-
-.games_played, .attempts, .accuracy {
-    width: 80%;
-    height: 8%;
+    width: 85%;
     padding-top: 5%;
     border: 1px solid black;
     box-sizing: content-box;
     font-size: 20px;
+    color: white;
     background-color: dodgerblue;
     text-align: center;
     border-radius: 10px;
     margin-top: 2%;
-    margin-bottom: 2%;
     opacity: .5;
     position: relative;
-    left: 5%
-}
-
-.games-value, attempts-value, .accuracy-value {
-    width: 80%;
-    height: 10%;
-    border: 1px solid black;
-    box-sizing: content-box;
-    font-size: 20px;
-    background-color: dodgerblue;
-    text-align: center;
-    display: inline-block;
-    border-radius: 10px;
-    margin-top: 2%;
-    margin-left: 5%;
-    opacity: .5;
-    position: relative;
+    left: 18%;
+    bottom: 1%;
 }
