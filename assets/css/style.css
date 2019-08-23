@@ -31,12 +31,12 @@ main {
 }
 
 aside {
-    height: 64%;
+    height: 68%;
     width: 20%;
     display: inline-block;
     position: absolute;
-    top: 25%;
-    right: 78%;
+    top: 23%;
+    right: 77%;
 }
 
 .cardContainer {
@@ -66,13 +66,13 @@ aside {
     top: 0;
 }
 
-/* img {
+img {
     height: 80%;
     width: 100%;
     display: inline-block;
     position: relative;
     border-radius: 20px;
-} */
+}
 
 .hidden {
     display: none;
@@ -152,9 +152,8 @@ aside {
     background-color: dodgerblue;
     text-align: center;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 1%;
     opacity: .5;
     position: relative;
-    left: 18%;
-    bottom: 1%;
+    left: 10%;
 }

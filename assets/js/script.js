@@ -7,7 +7,7 @@ var max_matches = 9;
 var attempts = 0;
 var games_played = 0;
 var accuracy = 0;
-debugger;
+
 function initializeApp() {
     $('.card').on('click', handleCardClick);
     $('#resetButton').on('click', resetGame);
@@ -29,6 +29,7 @@ function handleCardClick(event) {
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
+            displayStats();
             if (matches === max_matches) {
                 $('.modal').show();
                 games_played++;
@@ -43,6 +44,16 @@ function handleCardClick(event) {
     }
 }
 
+function displayStats() {
+    $('.games-value').text(this.games_played);
+    $('.attempts-value').text(this.attempts);
+    $('.accuracy-value').text(this.Math.round(accuracy*100) + '%');
+}
+
+function calculateAccuracy() {
+    accuracy = matches/attempts;
+}
+
 function resetGame() {
     resetCards();
     closeModal();
@@ -54,16 +65,6 @@ function resetStats() {
     matches = 0;
     attempts = 0;
     accuracy = 0;
-}
-
-function displayStats() {
-    $('.games_played .value').text(games_played);
-    $('.attempts .value').text(attempts);
-    $('.accuracy .value').text(Math.round(accuracy*100) + '%');
-}
-
-function calculateAccuracy() {
-    accuracy = matches/attempts;
 }
 
 function hideCards() {
