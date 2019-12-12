@@ -1,6 +1,9 @@
 body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('https://www.publicdomainpictures.net/pictures/120000/nahled/greyscale-fading-background.jpg');
 }
 
 header {
@@ -9,7 +12,7 @@ header {
     position: absolute;
     text-align: center;
     bottom: 85%;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -41,22 +44,22 @@ aside {
 
 .cardContainer {
     height: 70%;
-    width: 65%;
+    width: 76%;
     display: flex;
     flex-wrap: wrap;
-    top: 23%;
+    top: 21%;
     left: 23%;
     position: absolute;
 }
 
 .card {
-    height: 38%;
+    height: 40%;
     width: 15%;
     position: relative;
     margin-left: 1%;
     margin-top: -6%;
-    left: 5%;
-    top: 10%;
+    left: -1%;
+    top: 15%;
 }
 
 .card-back, .card-front {
@@ -64,14 +67,16 @@ aside {
     height: 100%;
     position: absolute;
     top: 0;
+    border: 3px white;
 }
 
 img {
-    height: 80%;
+    height: 73%;
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
     position: relative;
-    border-radius: 20px;
+    left: 20%;
 }
 
 .hidden {
