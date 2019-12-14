@@ -1,187 +1,183 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Memory Match</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>Memory Match</h1>
-</header>
-<aside>
-    <div class="statsBox">Stats</div>
-    <div class="games_played">
-        <div class="label">Games Played:</div>
+    <header>
+        <h1>Memory Match</h1>
+    </header>
+    <aside>
+        <div class="statsBox">Stats</div>
+        <div class="games_played">
+            <div class="label">Games Played:</div>
+        </div>
+        <div class="games-value"></div>
+        <div class="attempts">
+            <div class="label">Attempts:</div>
+        </div>
+        <div class="attempts-value"></div>
+        <div class="accuracy">
+            <div class="label">Accuracy:</div>
+        </div>
+        <div class="accuracy-value"></div>
+    </aside>
+    <div id="myModal" class="modal">
+        <div class="modal">You Have Won!</div>
+        <button class="button" id="resetButton">Play Again</button>
+        <div class="modalShadow"></div>
+        <span class="close">&times;</span>
     </div>
-    <div class="games-value"></div>
-    <div class="attempts">
-        <div class="label">Attempts:</div>
-    </div>
-    <div class="attempts-value"></div>
-    <div class="accuracy">
-        <div class="label">Accuracy:</div>
-    </div>
-    <div class="accuracy-value"></div>
-</aside>
-<div id="myModal" class="modal">
-    <div class="modal">You Have Won!</div>
-    <button class="button" id="resetButton">Play Again</button>
-    <div class="modalShadow"></div>
-    <span class="close">&times;</span>
-</div>
-<main>
-    <div class="cardContainer">
-        <div class="card">
-            <div class="card-front">
-                <img src="https://i7.pngguru.com/preview/990/456/897/sports-car-bugatti-veyron-luxury-vehicle-bugatti-png-thumbnail.jpg" alt="andy">
+    <main>
+        <div class="cardContainer">
+            <div class="card">
+                <div class="card-front">
+                    <img src="https://i7.pngguru.com/preview/990/456/897/sports-car-bugatti-veyron-luxury-vehicle-bugatti-png-thumbnail.jpg" alt="andy">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="https://files1.porsche.com/filestore/image/multimedia/none/991-2nd-gt3-rs-modelimage-sideshot/model/d446a760-17dc-11e8-bbc5-0019999cd470/porsche-model.png" alt="brett">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="https://files1.porsche.com/filestore/image/multimedia/none/991-2nd-gt3-rs-modelimage-sideshot/model/d446a760-17dc-11e8-bbc5-0019999cd470/porsche-model.png" alt="brett">
+            <div class="card">
+                <div class="card-front">
+                    <img src="https://files1.porsche.com/filestore/image/multimedia/none/991-2nd-gt3-rs-modelimage-sideshot/model/d446a760-17dc-11e8-bbc5-0019999cd470/porsche-model.png" alt="brett">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lzf">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="http://www.freepngimg.com/thumb/ferrari/10-2-ferrari-download-png-thumb.png" alt="cody">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="https://files1.porsche.com/filestore/image/multimedia/none/991-2nd-gt3-rs-modelimage-sideshot/model/d446a760-17dc-11e8-bbc5-0019999cd470/porsche-model.png" alt="brett">
+            <div class="card">
+                <div class="card-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyWECeuIp80tQKlqM1HLrfBFgSya0-xDfP2RWazujPhx6asWW&s" alt="dan">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lzf">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/scott.jpg" alt="scott">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
+         </div>
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tim-d.jpg" alt="tim-d">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="http://www.freepngimg.com/thumb/ferrari/10-2-ferrari-download-png-thumb.png" alt="cody">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tim-h.jpg" alt="tim-h">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tj.jpg" alt="tj">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyWECeuIp80tQKlqM1HLrfBFgSya0-xDfP2RWazujPhx6asWW&s" alt="dan">
+            <div class="card">
+                <div class="card-front">
+                    <img src="http://www.pngmart.com/files/10/Lamborghini-Huracan-PNG-Clipart.png" alt="andy">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/bill.jpg" alt="bill">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/scott.jpg" alt="scott">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/bill.jpg" alt="bill">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="http://www.freepngimg.com/thumb/ferrari/10-2-ferrari-download-png-thumb.png" alt="cody">
+                </div>
+                <div class="card-back">
+                 <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tim-d.jpg" alt="tim-d">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/dan.jpg" alt="dan">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/scott.jpg" alt="scott">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tim-h.jpg" alt="tim-h">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tim-d.jpg" alt="tim-d">
+                </div>
+                <div class="card-back">
+                 <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tim-h.jpg" alt="tim-h">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tj.jpg" alt="tj">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="http://www.pngmart.com/files/10/Lamborghini-Huracan-PNG-Clipart.png" alt="andy">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/bill.jpg" alt="bill">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/bill.jpg" alt="bill">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="http://www.freepngimg.com/thumb/ferrari/10-2-ferrari-download-png-thumb.png" alt="cody">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/dan.jpg" alt="dan">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/scott.jpg" alt="scott">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tim-d.jpg" alt="tim-d">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tim-h.jpg" alt="tim-h">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
+            <div class="card">
+                <div class="card-front">
+                    <img src="assets/images/tj.jpg" alt="tj">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/lfz-card.jpg" alt="lfz">
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-front">
-                <img src="assets/images/tj.jpg" alt="tj">
-            </div>
-            <div class="card-back">
-                <img src="assets/images/lfz-card.jpg" alt="lfz">
-            </div>
-        </div>
-    </div>
-</main>
+    </main>
 </body>
 </html>
