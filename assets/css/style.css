@@ -71,12 +71,13 @@ aside {
 }
 
 img {
-    height: 73%;
+    height: 82%;
     width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
     left: 20%;
+    border-radius: 5%;
 }
 
 .hidden {
