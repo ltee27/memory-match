@@ -26,10 +26,12 @@ function handleCardClick(event) {
         var firstImage = $(firstCardClicked).find('.card-front img').attr('src');
         var secondImage = $(secondCardClicked).find('.card-front img').attr('src');
         if (firstImage === secondImage) {
-            matches++;
             firstCardClicked = null;
             secondCardClicked = null;
+            attempts++;
+            matches++;
             displayStats();
+
             if (matches === max_matches) {
                 $('.modal').show();
                 games_played++;
@@ -47,11 +49,11 @@ function handleCardClick(event) {
 function displayStats() {
     $('.games-value').text(this.games_played);
     $('.attempts-value').text(this.attempts);
-    $('.accuracy-value').text(this.Math.round(accuracy*100) + '%');
+    $('.accuracy-value').text(calculateAccuracy());
 }
 
 function calculateAccuracy() {
-    accuracy = matches/attempts;
+    this.Math.round(accuracy*100) + '%'
 }
 
 function resetGame() {
@@ -70,8 +72,6 @@ function resetStats() {
 function hideCards() {
     firstCardClicked.find('.card-back').removeClass('hidden');
     secondCardClicked.find('.card-back').removeClass('hidden');
-    firstCardClicked.find('.card-front').removeClass('hidden');
-    secondCardClicked.find('.card-front').removeClass('hidden');
     firstCardClicked = null;
     secondCardClicked = null;
 }
