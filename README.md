@@ -30,4 +30,4 @@ cd memory_match
 
 ## Preview
 
-![Memory Match](./)
+![Memory Match](./assets/images/MemoryMatch.gif)
