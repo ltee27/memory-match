@@ -29,3 +29,5 @@ cd memory_match
 3. Open the index.html file in default browser.
 
 ## Preview
+
+![Memory Match](./)
